@@ -39,3 +39,4 @@ build/
 
 ### 파일 정리
 /.idea/sonarlint/
+.env
