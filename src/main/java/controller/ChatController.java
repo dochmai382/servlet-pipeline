@@ -82,7 +82,7 @@ public class ChatController extends HttpServlet {
                     "steps": %d,
                     "n": 1
                 }
-                """.formatted((val > 0.5 ? model1 : model2), prompt, val > 0.5 ? 40 : 4); // 확률적으로 반반 분산시켰다, 모델에 따라 다른 steps 수.
+                """.formatted((val > 0.5 ? model1 : model2), prompt, val > 0.5 ? 4 : 40); // 확률적으로 반반 분산시켰다, 모델에 따라 다른 steps 수.
         try {
             Thread.sleep(5000); // 이렇게 된 이상 5초 대기 시킨다 진짜
         } catch (InterruptedException e) {
